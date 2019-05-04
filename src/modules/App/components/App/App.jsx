@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
 import './app.scss';
 
-import Navbar from 'common/components/Navbar/containers/NavbarContainer'
+import Navbar from 'common/components/Navbar/containers/NavbarContainer';
+import Content from 'common/components/Content/containers/ContentContainer';
+import Preloader from 'common/components/Preloader/Preloader';
+
 export default class App extends Component {
 
   componentDidMount() {
@@ -17,10 +20,13 @@ export default class App extends Component {
 
     return (
       <div>
-        <Navbar />
-        <p>
-          {isPreloading ? 'yes' : 'no'}
-        </p>
+        {isPreloading ? 
+          <Preloader /> : 
+          <div>
+            <Navbar />
+            <Content />
+          </div>
+        }
       </div>
     )
   }
