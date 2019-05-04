@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 
-import './preloader.scss';
+import style from './Preloader.module.scss';
 
 class Preloader extends Component {
   render() {
     return (
-      <div className="wrapper">
-        <div className="spinner">
-          <div className="double-bounce1"></div>
-          <div className="double-bounce2"></div>
+      <div className={style.wrapper}>
+        <div className={style.spinner}>
+          <div className={style.double__bounce_1}></div>
+          <div className={style.double__bounce_2}></div>
         </div>
       </div>
     )

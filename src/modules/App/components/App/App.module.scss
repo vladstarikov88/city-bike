@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+
+  &__navbar {
+    width: 18rem;
+  }
+
+
+  &__content {
+    flex: 1;
+  }
+}

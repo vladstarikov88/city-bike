@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import './app.scss';
-
 import Navbar from 'common/components/Navbar/containers/NavbarContainer';
 import Content from 'common/components/Content/containers/ContentContainer';
 import Preloader from 'common/components/Preloader/Preloader';
+
+import styles from './App.module.scss';
 
 export default class App extends Component {
 
@@ -22,9 +22,13 @@ export default class App extends Component {
       <div>
         {isPreloading ? 
           <Preloader /> : 
-          <div>
-            <Navbar />
-            <Content />
+          <div className={styles.wrapper}>
+            <div className={styles.wrapper__navbar}>
+              <Navbar />
+            </div>
+            <div className={styles.wrapper__content}>
+              <Content />
+            </div>
           </div>
         }
       </div>
