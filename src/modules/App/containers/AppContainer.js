@@ -1,18 +1,23 @@
 import {connect} from 'react-redux';
 
-import App from '../components/App/App';
+import App from '../App';
 
-import {getIsPreloading, getStations} from '../selectors/bikes';
-import {changeIsPreloading, requestBikes} from '../actions/bikes';
+import {
+	getIsNetworksPreloading, 
+	getisStationsPreloading,
+	getNetworks,
+} from '../selectors/bikes';
+import {changeisNetworksPreloading, requestNetworks} from '../actions/bikes';
 
 const mapStateToProps = (state) => ({
-	stations: getStations(state),
-	isPreloading: getIsPreloading(state)
+	networks: getNetworks(state),
+	isNetworksPreloading: getIsNetworksPreloading(state),
+	isStationsPreloading: getisStationsPreloading(state)
 })
 
 const mapDispatchToProps = (dispatch) => ({
-	changePreloading: (value) => dispatch(changeIsPreloading(value)),
-	requestBikes: () => dispatch(requestBikes())
+	changePreloading: (value) => dispatch(changeisNetworksPreloading(value)),
+	requestNetworks: () => dispatch(requestNetworks())
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

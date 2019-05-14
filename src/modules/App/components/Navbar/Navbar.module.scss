@@ -1,16 +1,17 @@
 .navbar {
   background-color: #fff;
-  ul {
+
+  .title {
+    margin-left: 1rem;
+  }
+
+  .group {
     list-style: none;
     padding: 0;
     margin: 0;
   }
 
-  &__group {
-
-  }
-
-  &__item {
+  .item {
     a {
       display: block;
       width: 100%;

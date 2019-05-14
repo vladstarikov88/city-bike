@@ -1,18 +1,36 @@
 import {createAction} from 'redux-actions';
 import {
-	REQUEST_BIKES,
-	REQUEST_BIKES_SUCCESS,
-	CHANGE_IS_PRELOADING,
+	REQUEST_NETWORKS,
+	REQUEST_NETWORKS_SUCCESS,
+	CHANGE_IS_NETWORKS_PRELOADING,
+
+	REQUEST_STATIONS,
+	REQUEST_STATIONS_SUCCESS,
+	CHANGE_IS_STATIONS_PRELOADING,
 } from '../constants/bikesConstants';
 
-export const requestBikesSucces = createAction( 
-	REQUEST_BIKES_SUCCESS,
+export const requestNetworks = createAction(REQUEST_NETWORKS);
+
+export const requestNetworksSucces = createAction( 
+	REQUEST_NETWORKS_SUCCESS,
 	data => data
 );
 
-export const changeIsPreloading = createAction(
-	CHANGE_IS_PRELOADING,
+export const changeisNetworksPreloading = createAction(
+	CHANGE_IS_NETWORKS_PRELOADING,
 	status => status
 )
 
-export const requestBikes = createAction(REQUEST_BIKES);
+
+
+export const requestStations = createAction(REQUEST_STATIONS);
+
+export const requestStationsSucces = createAction( 
+	REQUEST_STATIONS_SUCCESS,
+	data => data
+);
+
+export const changeisStationsPreloading = createAction(
+	CHANGE_IS_STATIONS_PRELOADING,
+	status => status
+)
