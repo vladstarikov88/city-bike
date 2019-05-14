@@ -1,0 +1,21 @@
+@mixin cell-padding {
+  padding: .3rem .5rem .5rem;
+}
+
+$table-border-color: #cecece;
+
+.table {
+  width: 100%;
+  margin-block-end: 1rem;
+  border-spacing: 0;
+  tr {   
+    th {
+      text-align: left;
+      border-bottom: 1px solid $table-border-color;
+      @include cell-padding();
+    }
+    td {
+      @include cell-padding();
+    }
+  }
+}

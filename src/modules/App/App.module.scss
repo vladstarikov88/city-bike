@@ -1,12 +1,14 @@
 .wrapper {
   display: flex;
 
-  &__navbar {
+  .navbar {
     width: 18rem;
+    height: 100vh;
+    overflow-y: scroll;
   }
 
 
-  &__content {
+  .content {
     flex: 1;
   }
 }
