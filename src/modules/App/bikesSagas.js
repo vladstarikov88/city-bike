@@ -3,18 +3,18 @@ import {takeLatest, call, put} from 'redux-saga/effects';
 import {
 	REQUEST_NETWORKS,
 	// REQUEST_STATIONS,
-} from '../constants/bikesConstants';
+} from './bikesConstants';
 
 import {
 	changeisNetworksPreloading,
 	requestNetworksSucces,
 	changeisStationsPreloading,
 	requestStationsSucces
-} from '../actions/bikes';
+} from './bikesActions';
 
 import {
 	REQUEST_STATIONS
-} from '../components/NavbarNetworks/constants/navbarConstants'
+} from './components/NavbarNetworks/navbarConstants'
 
 function* networksSaga() {
 	try {

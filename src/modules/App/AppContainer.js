@@ -1,13 +1,13 @@
 import {connect} from 'react-redux';
 
-import App from '../App';
+import App from './App';
 
 import {
 	getIsNetworksPreloading, 
 	getisStationsPreloading,
 	getNetworks,
-} from '../selectors/bikes';
-import {changeisNetworksPreloading, requestNetworks} from '../actions/bikes';
+} from './bikesSelectors';
+import {changeisNetworksPreloading, requestNetworks} from './bikesActions';
 
 const mapStateToProps = (state) => ({
 	networks: getNetworks(state),

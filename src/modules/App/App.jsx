@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 
-import NavbarNetworks from './components/NavbarNetworks/containers/NavbarNetworksContainer';
-import NavbarStations from './components/NavbarStations/containers/NavbarStationsContainer';
-import Content from './components/Content/containers/ContentContainer';
-import Preloader from 'common/components/Preloader/Preloader';
+import NavbarNetworks from './components/NavbarNetworks/NavbarNetworksContainer';
+import NavbarStations from './components/NavbarStations/NavbarStationsContainer';
+import Content from './components/Content/ContentContainer';
+// import Preloader from 'common/components/Preloader/Preloader';
 
 import styles from './App.module.scss';
 

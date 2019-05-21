@@ -7,7 +7,7 @@ import {
 	REQUEST_STATIONS,
 	REQUEST_STATIONS_SUCCESS,
 	CHANGE_IS_STATIONS_PRELOADING,
-} from '../constants/bikesConstants';
+} from './bikesConstants';
 
 export const requestNetworks = createAction(REQUEST_NETWORKS);
 

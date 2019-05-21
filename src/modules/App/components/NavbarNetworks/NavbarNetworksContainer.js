@@ -1,12 +1,12 @@
 import {connect} from 'react-redux';
 
-import NavbarNetworks from '../NavbarNetworks';
+import NavbarNetworks from './NavbarNetworks';
 
-import {getNetworks} from '../selectors/networks';
+import {getNetworks} from './networksSelectors';
 import {
   setNetworkId,
   requestStations,
-} from '../actions/network';
+} from './networkActions';
 
 const mapStateToProps = state => ({
   networks: getNetworks(state)

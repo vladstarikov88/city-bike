@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './root/index.css';
-import App from './modules/App/containers/AppContainer';
+import App from './modules/App/AppContainer';
 import * as serviceWorker from './root/serviceWorker';
 import createSagaMiddleware from 'redux-saga';
 import {composeWithDevTools} from 'redux-devtools-extension';
