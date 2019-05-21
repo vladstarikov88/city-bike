@@ -1,9 +1,15 @@
 import {createAction} from 'redux-actions';
 import {
 	SET_NETWORK_ID,
-} from '../constants/navbarConstants';
+	REQUEST_STATIONS,
+} from './navbarConstants';
 
 export const setNetworkId = createAction(
 	SET_NETWORK_ID,
 	id => id
 )
+
+export const requestStations = createAction(
+	REQUEST_STATIONS,
+	id => id
+);

@@ -5,11 +5,11 @@ import {
 	REQUEST_STATIONS_SUCCESS,
 	CHANGE_IS_NETWORKS_PRELOADING,
 	CHANGE_IS_STATIONS_PRELOADING,
-} from '../constants/bikesConstants';
+} from './bikesConstants';
 
 import {
 	SET_NETWORK_ID,
-} from '../components/NavbarNetworks/constants/navbarConstants'
+} from './components/NavbarNetworks/navbarConstants'
 
 const initialState = {
 	isNetworksPreloading: true,

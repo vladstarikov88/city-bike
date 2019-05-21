@@ -1,11 +1,11 @@
 import {connect} from 'react-redux';
 
-import NavbarStations from '../NavbarStations';
+import NavbarStations from './NavbarStations';
 
-import {getStations} from '../selectors/stations';
+import {getStations} from './stationsSelectors';
 import {
   setNetworkId,
-} from '../actions/stations';
+} from './stationsActions';
 
 const mapStateToProps = state => ({
   stations: getStations(state)
