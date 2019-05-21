@@ -7,10 +7,9 @@ export const getisStationsPreloading = state => {
   return state.bikes.isStationsPreloading
 }
 export const getNetworks = state => state.bikes.networks;
-// export const getCurrentStationId = state => state.bikes.currentStation.id
-
-// export const getCurrentStation = createSelector(
-//   [getNetworks, getCurrentStationId],
-//   (notifications, dates) =>
-//     console.log(notifications, dates)
-// );
+export const hasStations = state => {
+  return !!(state.bikes.stations && state.bikes.stations.length)
+}
+export const hasStationId = state => {
+  return !!state.bikes.selectedStationId
+}

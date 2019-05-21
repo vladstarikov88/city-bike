@@ -4,15 +4,17 @@ import App from './App';
 
 import {
 	getIsNetworksPreloading, 
-	getisStationsPreloading,
 	getNetworks,
+	hasStations,
+	hasStationId,
 } from './bikesSelectors';
 import {changeisNetworksPreloading, requestNetworks} from './bikesActions';
 
 const mapStateToProps = (state) => ({
 	networks: getNetworks(state),
+	hasStations: hasStations(state),
+	hasStationId: hasStationId(state),
 	isNetworksPreloading: getIsNetworksPreloading(state),
-	isStationsPreloading: getisStationsPreloading(state)
 })
 
 const mapDispatchToProps = (dispatch) => ({
